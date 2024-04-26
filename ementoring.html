@@ -3,28 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alumni Tracking - UniFusion</title>
+    <title>E-Mentoring Programs - UniFusion</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="main-header">
-        <h1>Alumni Tracking</h1>
-        <p>Connect with alumni who have paved their way into the consulting world.</p>
+        <h1>E-Mentoring Programs</h1>
+        <p>Personalized mentorship connections with seasoned alumni.</p>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="networking-events.html">Networking Events</a></li>
                 <li><a href="internship-board.html">Internship Board</a></li>
-                <li><a href="alumni-tracking.html" class="active">Alumni Tracking</a></li>
-                <li><a href="ementoring.html">E-Mentoring Programs</a></li>
+                <li><a href="alumni-tracking.html">Alumni Tracking</a></li>
+                <li><a href="ementoring.html" class="active">E-Mentoring Programs</a></li>
                 <li><a href="skills-development.html">Skills Tracking & Development</a></li>
+                <li><a href="international-students.html" class="active">Key Resources</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h2>Alumni Insights</h2>
-            <p>Gain valuable insights and guidance by connecting with former students who are now thriving professionals in the consulting industry.</p>
+            <h2>Create Your Mentorship Profile</h2>
+            <form action="#" method="POST">
+                <label for="interests">Your Interests:</label>
+                <input type="text" id="interests" name="interests" placeholder="e.g., Strategy, Management">
+                <label for="industry">Preferred Industry:</label>
+                <select id="industry" name="industry">
+                    <option value="Strategy">Strategy</option>
+                    <option value="technology">Technology</option>
+                    <option value="management">Management</option>
+                    <!-- More industries as options -->
+                </select>
+                <label for="experience_level">Experience Level:</label>
+                <select id="experience_level" name="experience_level">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+                <button type="submit">Save Profile</button>
+            </form>
+        </section>
+        <section>
+            <h2>Find a Mentor</h2>
+            <p>Use the filters below to match with the right alumni mentor for you.</p>
+            <form action="#" method="GET">
+                <label for="search">Search by Company or Skill:</label>
+                <input type="text" id="search" name="search">
+                <button type="submit">Search</button>
+            </form>
+            <div class="mentor-list">
+                <!-- Dynamic list of mentors should be populated here based on backend data -->
+            </div>
         </section>
     </main>
     <footer>

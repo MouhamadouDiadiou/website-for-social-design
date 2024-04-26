@@ -18,13 +18,42 @@
                 <li><a href="alumni-tracking.html">Alumni Tracking</a></li>
                 <li><a href="ementoring.html">E-Mentoring Programs</a></li>
                 <li><a href="skills-development.html">Skills Tracking & Development</a></li>
+                <li><a href="international-students.html" class="active">Key Resources</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h2>Upcoming Events</h2>
-            <p>Explore our calendar of virtual meetups and industry-specific webinars. Connect and interact with industry leaders via live chat and video conferencing.</p>
+            <h2>Explore Our Calendar of Events</h2>
+            <form id="events-filter-form">
+                <label for="event-type">Event Type:</label>
+                <select id="event-type" name="event_type">
+                    <option value="all">All Types</option>
+                    <option value="webinar">Webinar</option>
+                    <option value="meetup">Meetup</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="recruiting">Recruiting Event</option>
+                </select>
+                <button type="submit">Filter Events</button>
+            </form>
+            <div id="events-list">
+                <!-- Events will be dynamically inserted here -->
+            </div>
+        </section>
+        <section id="post-event">
+            <h2>Host an Event</h2>
+            <form id="event-form">
+                <input type="text" id="event-name" name="event_name" placeholder="Event Name">
+                <textarea id="event-description" name="event_description" placeholder="Event Description"></textarea>
+                <input type="datetime-local" id="event-date" name="event_date">
+                <button type="submit">Post Event</button>
+            </form>
+        </section>
+        <section id="event-stories">
+            <h2>Event Stories</h2>
+            <div id="stories-container">
+                <!-- Stories will be dynamically populated here -->
+            </div>
         </section>
     </main>
     <footer>

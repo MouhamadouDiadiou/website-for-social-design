@@ -24,7 +24,26 @@
     <main>
         <section>
             <h2>Explore Opportunities</h2>
-            <p>Search through a dynamic listing of internship opportunities that can help you gain practical experience and build your professional network.</p>
+            <form id="search-form">
+                <input type="text" id="search-keyword" name="keyword" placeholder="Keyword, e.g., Finance, Tech">
+                <select id="location-filter" name="location">
+                    <option value="">Select Location</option>
+                    <option value="dubai">Dubai</option>
+                    <option value="abu_dhabi">Abu Dhabi</option>
+                    <option value="sharjah">Sharjah</option>
+                    <!-- More locations as needed -->
+                </select>
+                <select id="duration-filter" name="duration">
+                    <option value="">Internship Duration</option>
+                    <option value="short">1-3 Months</option>
+                    <option value="medium">4-6 Months</option>
+                    <option value="long">7+ Months</option>
+                </select>
+                <button type="submit">Search</button>
+            </form>
+            <div id="internship-listings">
+                <!-- Internship listings will be dynamically populated here -->
+            </div>
         </section>
     </main>
     <footer>

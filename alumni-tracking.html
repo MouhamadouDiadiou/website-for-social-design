@@ -18,13 +18,44 @@
                 <li><a href="alumni-tracking.html" class="active">Alumni Tracking</a></li>
                 <li><a href="ementoring.html">E-Mentoring Programs</a></li>
                 <li><a href="skills-development.html">Skills Tracking & Development</a></li>
+                <li><a href="international-students.html" class="active">Key Resources</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h2>Alumni Insights</h2>
-            <p>Gain valuable insights and guidance by connecting with former students who are now thriving professionals in the consulting industry.</p>
+            <h2>Search for Alumni</h2>
+            <form id="alumni-search">
+                <label for="school">School:</label>
+                <select id="school" name="school">
+                    <option value="all">All Schools</option>
+                    <!-- Add options for each school -->
+                </select>
+                <label for="emirate">Emirate:</label>
+                <select id="emirate" name="emirate">
+                    <option value="all">All Emirates</option>
+                    <!-- Add options for each emirate -->
+                </select>
+                <label for="country">Country of Origin:</label>
+                <select id="country" name="country">
+                    <option value="all">All Countries</option>
+                    <!-- Add options for each country -->
+                </select>
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section id="alumni-stories">
+            <h2>Alumni Stories</h2>
+            <div id="stories-container">
+                <!-- Stories will be dynamically inserted here -->
+            </div>
+        </section>
+        <section id="share-story">
+            <h2>Share Your Story</h2>
+            <form id="story-form">
+                <textarea id="story" name="story" placeholder="Share your experiences..."></textarea>
+                <button type="submit">Post</button>
+            </form>
         </section>
     </main>
     <footer>
